@@ -1,22 +1,34 @@
-# Pairs Trading avec Machine Learning
+# Pairs Trading with Machine Learning
 
 ## 📋 Description
-Ce projet implémente une stratégie de pairs trading améliorée par des méthodes de machine learning, dans le cadre du Certificate in Python for Finance (CPF).
+This project implements a pairs trading strategy enhanced with machine learning, as part of the Certificate in Python for Finance (CPF).
 
-## 🚀 Structure du projet
-- `data/` : Données statiques (CSV)
-- `notebooks/` : Notebooks Jupyter
-- `src/` : Modules Python
-  - `baseline.py` : Stratégie traditionnelle (z-score)
-  - `models.py` : Modèles ML (Random Forest)
+## 🚀 Project Structure
 
-## 📊 Données
-Les données sont des prix synthétiques pour deux actifs corrélés (Asset_A et Asset_B), générés pour la période 2014-2024.
+### 📂 Folder Details
 
-## 🎯 Objectifs
-1. Implémenter une baseline de pairs trading (z-score)
-2. Développer des modèles ML (Random Forest)
-3. Comparer les performances
+- **`data/`** : Static CSV files with synthetic price data for two correlated assets
+- **`notebooks/`** : Main Jupyter notebook (`Final_Project_Pairs_Trading_ML.ipynb`)
+- **`src/`** : Python modules
+  - `baseline.py` : Traditional z-score strategy implementation
+  - `features.py` : Feature engineering functions for ML models
+  - `models.py` : Random Forest model and ML pipeline
+  - `backtest.py` : Backtesting utilities and performance metrics
+
+
+## 📊 Data
+The project uses **synthetic data** generated specifically for pairs trading:
+- Two highly correlated assets
+- Temporary spread deviations with mean reversion
+- Realistic long-term trends
+
+This ensures full reproducibility and compliance with CPF requirements (static data files).
+
+## 🎯 Objectives
+1. Implement a baseline pairs trading strategy (z-score)
+2. Engineer relevant features for machine learning
+3. Train a Random Forest model to predict mean reversion
+4. Compare performance between traditional and ML approaches
 
 ## 🔧 Installation
 ```bash
